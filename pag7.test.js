@@ -1,7 +1,7 @@
 const generateOutput = require("./pag7");
 
 const testCases = [
-  { current: 5, total: 10, expected: "1 .. 4 [5] 6 .. 10" }
+  { current: 4, total: 10, expected: "1 2 3 [4] 5 .. 10" }
 ]
 
 
