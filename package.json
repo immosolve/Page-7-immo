@@ -1,0 +1,21 @@
+{
+  "name": "page7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pag7.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1amer7/pag7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1amer7/pag7/issues"
+  },
+  "homepage": "https://github.com/1amer7/pag7#readme"
+}
