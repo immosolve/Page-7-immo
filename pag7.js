@@ -21,8 +21,23 @@ function generateOutput(current, total) {
       if (current === current) {
         output += `1 .. ${current - 1} [${current}] ${current + 1} .. ${total}`;
       }
-    } else{
-      
+    } else {
+      if (current <= 4 || total <= total - 4) {
+        for (let i = 1; i <= 5; i++) {
+          if (i === current) {
+            output += ` [${current}]`;
+          } else {
+            output += ` ${i}`;
+          }
+        }
+        if (total === total) {
+          output += ` .. ${total}`;
+        }
+      // } else {
+      //   if ( total <= total - 4) {
+      //     for (let i = 1; i <= total - 4; i++){}
+        // }
+      }
     }
   }
 
