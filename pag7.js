@@ -2,7 +2,7 @@ const { objectTypeAnnotation } = require("@babel/types");
 
 function generateOutput(current, total) {
   let output = "";
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= total; i++) {
     if (i < current) {
       output += `${i} `;
     }
@@ -14,7 +14,7 @@ function generateOutput(current, total) {
     }
   }
 
-  // if (current > 2) {
+  // if (current > 4) {
   //   output += `1 .. ${current - 1} `;
   // }
   // output += `[${current}]`;
