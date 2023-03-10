@@ -34,22 +34,23 @@ function generateOutput(current, total) {
     if (total === total) {
       output += `.. ${total}`;
     }
-  } else {
-    //  wenn current groesser / gleich total - 4
-    if (current >= total - 4) {
-      output += `1 .. `;
-      for (let i = total - 4; i <= total; i++) {
-        //  i ist gleich total -4 zaehle von i bis total
-        if (current === i) {
-          output += `[${i}] `;
-        }else {
-          output += `${i} `
-        }
-       
+    return output;
+  }
+  //  wenn current groesser / gleich total - 4
+  if (current >= total - 4) {
+    output += `1 .. `;
+
+    for (let i = total - 4; i <= total; i++) {
+      //  i ist gleich total -4 zaehle von i bis total
+      if (current === i) {
+        output += `[${i}] `;
+      } else {
+        output += `${i} `;
       }
     }
   }
-  return output;
+
+  return output.trim();
 }
 
 module.exports = generateOutput;
